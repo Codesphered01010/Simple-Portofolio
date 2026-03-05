@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DzarelDeveloper Portfolio</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/112155072?v=4" type="image/png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        plugins: [
+          require('@tailwindcss/typography'),
+          require('@tailwindcss/forms'),
+          require('@tailwindcss/aspect-ratio'),
+        ]
+      }
+    </script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            /* A light gray background */
+        }
+
+        /* Style for active nav link */
+        .nav-link-active {
+            color: #3b82f6;
+            /* A nice blue color for active link */
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header & Navigation Bar -->
+    <header id="header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"
+                class="text-2xl font-bold text-gray-800 lg:text-3xl hover:text-blue-500 transition-colors duration-300"><code><pre>&#x3C;/&#x3E; DzarelDeveloper</pre></code></a>
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex lg:items-center space-x-6">
+                <a href="#home"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Home</a>
+                <a href="#about"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">About</a>
+                <a href="#projects"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Projects</a>
+                <a href="#skill"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Skills</a>
+                <a href="#contact"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <a href="#home" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#projects" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Projects</a>
+            <a href="#skill" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Skills</a>
+            <a href="#contact" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-24 lg:pt-32 bg-white pb-32">
+            <div class="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+                <!-- Mobile Image (Top) -->
+                <div class="w-full flex justify-center lg:hidden mb-10">
+                    <img src="https://avatars.githubusercontent.com/u/112155072?v=4" alt="DzarelDeveloper"
+                        class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg">
+                </div>
+                <!-- Left Column (Text) -->
+                <div class="text-center lg:text-left lg:w-1/2 mb-10 lg:mb-0">
+                    <p class="text-xl mb-2 bg-blue-600 text-white px-3 py-1 rounded inline-block">Dzarel Alghifari</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">I'm <span class="text-blue-600">Web Developer</span></h1>
+                    <p class="text-lg text-gray-600 mb-8">seorang pengembang front-end dan web yang juga memiliki minat dalam software engineering dan keamanan siber. Ia menggunakan keahliannya dalam HTML, CSS, dan JavaScript untuk membangun situs web yang user-friendly dan responsif, serta memiliki ketertarikan pada Python dan pemecahan masalah kompleks melalui kode. </p>
+                    <div class="flex justify-center lg:justify-start space-x-4">
+                        <a href="#projects"
+                            class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105">View
+                            My Work</a>
+                        <a href="#contact"
+                            class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">Get
+                            In Touch</a>
+                    </div>
+                </div>
+                <!-- Desktop Image (Right) -->
+                <div class="lg:w-1/2 hidden lg:flex justify-center">
+                    <img src="https://avatars.githubusercontent.com/u/112155072?v=4" alt="DzarelDeveloper"
+                        class="rounded-full w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+                <div class="flex flex-col lg:flex-row items-center bg-white p-8 rounded-lg shadow-lg">
+                    <div class="lg:w-1/3 mb-8 lg:mb-0">
+                        <img src="mee.jpeg" alt="About Developergtm"
+                            class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div class="lg:w-2/3 lg:pl-12 text-center lg:text-left">
+  <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+
+  <p class="text-gray-600 leading-relaxed mb-4">
+    Halo! Saya <strong>Muhammad Dzarel Alghifari</strong> atau lebih dikenal dengan 
+    <strong>DzarelDeveloper</strong>. Saya adalah seorang <em>Front-End Developer</em> 
+    yang penuh semangat dalam dunia teknologi, khususnya pada bidang 
+    <em>Web Development</em>, <em>Cybersecurity</em>, dan <em>Software Engineering</em>.
+  </p>
+
+  <p class="text-gray-600 leading-relaxed mb-4">
+    Saya fokus membangun website yang responsif, user-friendly, dan fungsional 
+    dengan <strong>HTML, CSS, dan JavaScript</strong>. Selain itu, saya juga terus 
+    belajar dasar-dasar <em>backend</em> dan praktik <em>secure coding</em>, karena saya percaya 
+    sebuah aplikasi yang baik bukan hanya soal tampilan, tapi juga keamanan.
+  </p>
+
+  <p class="text-gray-600 leading-relaxed mb-4">
+    Ketertarikan saya pada dunia keamanan siber membuat saya ingin memahami lebih 
+    dalam bagaimana melindungi data, sistem, dan pengguna dari ancaman digital. 
+    Bagi saya, coding adalah seni memecahkan masalah, di mana logika, kreativitas, 
+    dan ketelitian dipadukan menjadi satu solusi nyata.
+  </p>
+
+  <p class="text-gray-600 leading-relaxed">
+    Ke depan, saya ingin berkembang menjadi seorang developer yang tidak hanya 
+    mahir secara teknis, tetapi juga mampu memberi <strong>dampak positif</strong> melalui 
+    karya digital, kontribusi pada proyek open source, maupun inovasi yang bisa 
+    bermanfaat untuk banyak orang.
+  </p>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="login.png" alt="Project 1"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Hospot Login Page</h3>
+                            <p class="text-gray-600 mb-4">Halaman login untuk jaringan hotspot, dibangun menggunakan HTML, CSS, dan JavaScript. Untuk halaman login kustom pada Mikrotik.</p>
+                            <a href="https://github.com/DzarelDeveloper/Hospot" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="programmer.png" alt="Project 2"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Active Programmer Mode</h3>
+                            <p class="text-gray-600 mb-4">Extension Chrome ini dibuat untuk programmer, pelajar, dan pejuang fokus yang ingin tetap produktif tanpa tergoda scroll medsos.</p>
+                            <a href="https://github.com/DzarelDeveloper/Active-Programmer-Mode" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="class.png" alt="Project 3"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Website Kelas v3</h3>
+                            <p class="text-gray-600 mb-4">Ini adalah versi ketiga situs web kelas 9four. Situs ini dirancang untuk menampilkan anggota kelas, linimasa, galeri, dan daftar putar Spotify pilihan. Situs web ini menggunakan desain modern dan responsif dengan fokus pada daya tarik visual dan pengalaman pengguna.</p>
+                            <a href="https://ofc-9four.netlify.app/" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skill" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+                <div class="grid grid-cols-4 gap-8 mb-8">
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">HTML</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">CSS</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="tailwind-css-svgrepo-com.svg" alt="Tailwind" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">Tailwind</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">Bash</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Cyber" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">Linux</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-24 h-24">
+                        <span class="mt-4 text-xl font-medium">C++</span>
+                    </div>
+                </div>
+                </div>
+                </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            
+            <p class="text-gray-400">&copy; 2025 DzarelDeveloper. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
